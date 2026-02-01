@@ -1,0 +1,4 @@
+[submodule "IntroSatLib"]
+	path = IntroSatLib
+	url = git@github.com:TeaCupMe/IntroSatLib.git
+	branch = dev/custom-adapter
