@@ -4,10 +4,16 @@
 #include <thread>
 #include <chrono>
 
-int main() {
 
+
+
+int main() {
+    debugf("Initializing\n");
+    setExecutionStart();
+    debugf("Execution start time set\n");
 
     setup();
+    debugf("setup() completed\n");
     while (true) {
         loop();
     }

@@ -1,5 +1,4 @@
 #include <main.h>
-#include <main.h>
 
 #include "AccelerometerV2.h"
 #include "GyroscopeV2.h"
