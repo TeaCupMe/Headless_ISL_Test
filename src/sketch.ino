@@ -17,16 +17,10 @@ void setup() {
     Serial.begin(115200, SERIAL_8E1);
     Serial.println("Begin!");
 
-    if (acc.Init(AccelerometerV2::Scale::fourG)) {
-        Serial.println("Error initializing acc");
-    }
+    acc.Init(AccelerometerV2::Scale::fourG);
+    gyro.Init(GyroscopeV2::Scale::DPS0500);
+    magn.Init(MagnetometerV2::Scale::G8);
     
-    if (gyro.Init(GyroscopeV2::Scale::DPS0500)) {
-        Serial.println("Error initializing gyro");
-    }
-    if (magn.Init(MagnetometerV2::Scale::G8)) {
-        Serial.println("Error initializing gyro");
-    }
 }
 
 void loop() {

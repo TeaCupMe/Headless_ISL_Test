@@ -1,8 +1,8 @@
 #ifndef V_UART_H_
 #define V_UART_H_
 #include "stdint.h"
-#include "v_core/v_debug.h"
-#include "v_core/v_interfaces/v_uart_defines.h"
+#include "v_interface/v_debug.h"
+#include "v_interface/v_uart_defines.h"
 
 class V_UART {
     uint8_t id;

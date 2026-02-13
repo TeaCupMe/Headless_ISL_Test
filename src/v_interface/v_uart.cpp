@@ -1,7 +1,7 @@
 #include "v_uart.h"
 #include <stdio.h>
 #include <string.h>
-#include "v_core/v_interfaces/v_interface.h"
+#include "v_interface/v_interface.h"
 
 V_UART::V_UART(uint8_t _id, void (*_outputBytes)(uint8_t*, uint16_t)): id(_id), outputBytes(_outputBytes)
 {

@@ -4,8 +4,8 @@
 #include <thread>
 #include <chrono>
 
-#include "v_core/v_interfaces/v_i2c.h"
-#include "v_core/v_interfaces/v_uart.h"
+#include "v_interface/v_i2c.h"
+#include "v_interface/v_uart.h"
 
 extern std::chrono::time_point<std::chrono::steady_clock> __execution_start_time__;
 

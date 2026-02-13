@@ -1,6 +1,6 @@
-#include "v_core/v_interfaces/v_i2c.h"
-#include "v_core/v_debug.h"
-#include "v_core/v_interfaces/v_interface.h"
+#include "v_interface/v_i2c.h"
+#include "v_interface/v_debug.h"
+#include "v_interface/v_interface.h"
 #include "v_i2c.h"
 #include <stdarg.h>
 
@@ -37,7 +37,7 @@ bool V_I2C::IsReady(uint8_t address)
 uint16_t V_I2C::Receive(uint8_t address, uint8_t *buf, uint16_t count)
 {
     _debugf("Requesting %d byte(s) from device " FADDR("0x%2X")"\n", count, address);
-    return count; 
+    return count;
 }
 
 bool V_I2C::Transmit(uint8_t address, uint8_t *buf, uint16_t count)
