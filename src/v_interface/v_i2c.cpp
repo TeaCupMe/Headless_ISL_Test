@@ -9,8 +9,7 @@ void V_I2C::begin(uint8_t _addr)
     if (addr) {
         _debugf("Starting as " FDATA("slave") " at address " FDATA("%d") "\n", addr);
         addr = _addr;
-    }
-    else {
+    } else {
         _debugf("Starting as " FDATA("master") " \n");
     }
 }
